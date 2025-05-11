@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Palette Bleu */
+  --color-light-blue: #e7ebf0;
+  --color-light-blue-hover: #dbe1e9;
+  --color-light-blue-active: #b4c2d1;
+
+  --color-normal-blue: #0e3969;
+  --color-normal-blue-hover: #0d335f;
+  --color-normal-blue-active: #0b2e54;
+
+  --color-hover-blue: #145692;
+
+  --color-dark-blue: #0b2b4f;
+  --color-dark-blue-hover: #08223f;
+  --color-dark-blue-active: #061a2f;
+
+  --color-darker-blue: #051425;
+
+  --color-tertiary: #ffffff;
+  --color-tertiary-hover: #e6e6e6;
+  --color-tertiary-active: #cccccc;
+
+  --color-tertiary-dark: #bfbfbf;
+  --color-tertiary-dark-hover: #999999;
+  --color-tertiary-dark-active: #737373;
+
+  --color-tertiary-darker: #595959;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  color: #1e1e1e;
+  line-height: 1.6;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
