@@ -1,18 +1,25 @@
 import { Link } from "react-router";
+import NotFoundPageSVG from "../assets/404-illustration.svg";
 
 const NotFoundPage = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-tertiary">
-      <h1 className="text-6xl font-bold text-normal-blue mb-2">404</h1>
-      <p className="text-2xl font-semibold mb-1">Page non trouvée</p>
-      <p className="text-gray-600 mb-4">
-        Oups ! Cette page n’existe pas ou a été déplacée.
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+      <img
+        src={NotFoundPageSVG}
+        alt="404 Not Found"
+        className="max-w-md w-full mb-8"
+      />
+      <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        Oups ! Page introuvable
+      </h1>
+      <p className="text-tertiary-dark-active mb-6">
+        La page que vous cherchez n'existe pas ou a été déplacée.
       </p>
       <Link
-        to="/"
-        className="px-5 py-3 bg-normal-blue text-tertiary rounded hover:bg-[#145692] transition-colors duration-300 text-sm"
+        to="/"  
+        className="px-6 py-3 bg-normal-blue text-tertiary rounded-full hover:bg-light-blue-active transition"
       >
-        Retour à l’accueil
+        Retour à l'accueil
       </Link>
     </div>
   );

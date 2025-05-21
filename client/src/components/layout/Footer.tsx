@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-normal-blue text-white py-6 mt-10">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+      <div className="px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
         <p className="text-sm">
           © {new Date().getFullYear()} IConverter. Tous droits réservés.
         </p>
